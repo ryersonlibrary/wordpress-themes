@@ -1,0 +1,38 @@
+/* Book an Appointment
+Last Modified: Sep 28, 2012 by CN */
+
+.entry-content li {
+  display: inline-block;
+  line-height: 4em;
+  text-align: center;
+  width: 32%;
+  height: 5em;
+}
+.entry-content li a {
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  display: inline-block;
+  line-height: 2.5em;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  padding-top: 2em;
+  text-decoration: none;
+}
+.entry-content li a:hover {
+  background-color: #FDF5CE;
+}
+.entry-content li .twoline {
+  line-height: 1.2em;
+}
+@media (max-width: 53em) { /* approx 850px */
+  .entry-content ul {
+    padding: 0;
+  }
+}
+@media (max-width: 30.5em) { /* approx 415px */
+  .entry-content li a {
+    line-height: 1.2em;
+  }
+}

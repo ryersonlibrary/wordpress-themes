@@ -1,0 +1,331 @@
+/*
+Theme Name: RULA Mobile
+Description: Super basic, simple theme to accomodate the RULA Mobile site. Note: Analytics coded into index.php file.
+Author: Cynthia Ng
+Version: 1.0
+Tags: one-column
+
+Version
+Last Released by: CN
+Last Released: Mar 21, 2013
+
+CSS File
+Last Modified by: CN
+Last Modified: Mar 21, 2013
+
+@package WordPress
+@subpackage RULAm
+*/
+
+@import "normalize.css";
+
+/* =Extra Normalize Rules
+----------------------------------------------- */
+/* Force Safari to style search form fields */
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/* Global Overrides */
+.fullsize {
+	min-height: 99.9%; /* hack to make gradient full background of window */
+}
+
+body {
+	font-family: Arial, Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+	color: 					#333333 /*{c-body-color}*/;
+	background: 			#f9f9f9 /*{c-body-background-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eeeeee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eeeeee /*{c-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eeeeee /*{c-body-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eeeeee /*{c-body-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eeeeee /*{c-body-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eeeeee /*{c-body-background-end}*/);
+}
+
+a:link {
+	color: #1c5793;
+	text-decoration: none;
+}
+a:visited {
+	color: #1c5793;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0.125em;
+}
+
+/*** Theme Styling ***/
+/* For text fields */
+label.ui-input-text {
+    display: block;
+    margin: 0 2% 0 0;
+    vertical-align: top;
+}
+.ui-corner-all {
+    border-radius: 0.6em 0.6em 0.6em 0.6em;
+	background-clip: padding-box;
+}
+.ui-shadow-inset {
+	-moz-box-shadow: inset 0px 1px 4px 		rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0px 1px 4px 	rgba(0,0,0,.2);
+	box-shadow: inset 0px 1px 4px 			rgba(0,0,0,.2);
+}
+.ui-input-text {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+input.ui-input-text {
+    background-image: none;
+    display: inline-block;
+    padding: 0.4em;
+	min-width: 175px;
+    width: 60%;
+	border: 1px solid #AAAAAA;
+}
+
+/* For buttons */
+.ui-btn {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.6em 1.2em;
+    position: relative;
+    text-align: center;
+	text-decoration: none;
+	vertical-align: 12%;
+	/* from ui-btn-up-c */
+	border: 1px solid 		#ccc /*{c-bup-border}*/;
+	background: 			#eee /*{c-bup-background-color}*/;
+	font-weight: bold;
+	color: 					#222 /*{c-bup-color}*/;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #ffffff /*{c-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{c-bup-background-start}*/), to( #f1f1f1 /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/);
+}
+.ui-btn:hover {
+	/* .ui-btn-hover-c */
+	border: 1px solid 		#bbb /*{c-bhover-border}*/;
+	background: 			#dfdfdf /*{c-bhover-background-color}*/;
+	font-weight: bold;
+	color: 					#222 /*{c-bhover-color}*/;
+	text-shadow: 0 /*{c-bhover-shadow-x}*/ 1px /*{c-bhover-shadow-y}*/ 0 /*{c-bhover-shadow-radius}*/ #ffffff /*{c-bhover-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{c-bhover-background-start}*/), to( #e0e0e0 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/);
+}
+.ui-btn:active {
+	/* .ui-btn-down-c */
+	border: 1px solid 		#bbb /*{c-bdown-border}*/;
+	background: 			#d6d6d6 /*{c-bdown-background-color}*/;
+	font-weight: bold;
+	color: 					#222 /*{c-bdown-color}*/;
+	text-shadow: 0 /*{c-bdown-shadow-x}*/ 1px /*{c-bdown-shadow-y}*/ 0 /*{c-bdown-shadow-radius}*/ #ffffff /*{c-bdown-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #d0d0d0 /*{c-bdown-background-start}*/), to( #dfdfdf /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/);
+}
+.ui-btn-inner {
+	border-top: 1px solid 	#fff;
+	border-color: 			rgba(255,255,255,.3);
+    min-width: 0.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ui-btn-corner-all {
+    border-radius: 1em 1em 1em 1em;
+	background-clip: padding-box;
+}
+.ui-shadow {
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+}
+/* Page Layout */
+#main {
+	margin-left: 0.65em;
+	margin-right: 0.5em;
+}
+
+/* Assistive Links */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+a.assistive-text:active,
+a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}
+
+/* Header - matched to jQuery mobile theme used by bookfinder */
+#branding{
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+	width: 100%;
+    height: 60px;
+	padding: 7px 0.65em 5px;
+	position: relative;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom: 1px solid 		#B3B3B3 /*{c-bar-border}*/;
+	border-top: 1px solid 		#B3B3B3 /*{c-bar-border}*/;
+	background: 			#eeeeee /*{c-bar-background-color}*/;
+	color: 					#3E3E3E /*{c-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{c-bar-shadow-x}*/ 1px /*{c-bar-shadow-y}*/ 1px /*{c-bar-shadow-radius}*/ 	#fff /*{c-bar-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f0f0f0 /*{c-bar-background-start}*/), to( #ddd /*{c-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f0f0f0 /*{c-bar-background-start}*/, #ddd /*{c-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f0f0f0 /*{c-bar-background-start}*/, #ddd /*{c-bar-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f0f0f0 /*{c-bar-background-start}*/, #ddd /*{c-bar-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f0f0f0 /*{c-bar-background-start}*/, #ddd /*{c-bar-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f0f0f0 /*{c-bar-background-start}*/, #ddd /*{c-bar-background-end}*/);
+}
+
+#logo {
+	float: left;
+}
+#mlogo {
+	border:0;
+	float: right;
+/*	padding-right: 20px; */
+	height: 43px;
+}
+/*
+#titlebar2 {
+     width:300px;
+     height:70px;
+     text-align: right;
+	 background: url(http://www.ryerson.ca/library/mobile/images/librarymobile3.jpg) top left no-repeat;
+     margin: 5px 20px 0 0;
+	 padding-right: 100px;
+}
+*/
+
+/*** Content ***/
+/* main menu page */
+#icons {
+	width: 300px;
+	margin-top: 0px;
+}
+
+.menu-item {
+	height: 110px;
+	width: 100px;
+	text-align:center;
+	float:left;
+}
+
+/* menu image */
+.mi {
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	border: none;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+/* Cookie notification on main page */
+#cwarn {
+	border-bottom: 1px solid gold;
+	background-color: #FFF8DC;
+	color: #000;
+	font-size: 80%;
+	padding: 4px 10px;
+	display: none;
+}
+
+.cclose {
+	border: 1px solid gold;
+	margin: -2px;
+	padding: 1px 3px;
+	float: right;
+}
+
+/* 404 error page */
+.error404 .entry-title {
+	font-size: 1.4em;
+}
+
+/* hide date in today's hours */
+.date_title {
+	display: none; 
+}
+
+/* summon search form */
+.summon_search {
+	margin-bottom: 0.5em;
+}
+
+/* modify list of links e.g. Articles */
+.linklist { 
+	padding: 0; 
+	margin-top:0px; 
+	margin-right:10px; 
+	margin-left:0px; 
+	margin-bottom:17px; 
+	
+	/* Set each list 17 pixels from the top of the button bar (or the top of the next list) */
+	font-size:9pt;
+	font-family: Helvetica;
+	font-weight:bold;
+	color:black; 
+	width: 280px; 
+	background-color: white; /* Each list has a white background fill */
+	border-width: 1px; /* Draw a rectangle around each list */
+	border-style:solid ; 
+	border-color:rgb(217,217,217); 
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; /* Round each corner of the created rectangle */
+}
+
+.linkitem { 
+	list-style-type: none;	
+	padding-top:10px;		  
+	padding-right:10px;		 
+	padding-bottom:17px; /* Indent the cell content 14 pixels from the bottom edge of a cell */
+	padding-left:10px;	
+}
+
+.linkitem + .linkitem {
+	border-top-width:1px; /* Create lines between cells. Each line is placed above each item*/
+	border-top-style:solid;
+	border-top-color:rgb(217,217,217);
+}
+
+/* Links in Content Footer */
+#footer {
+	width: 300px;
+	text-align: center;
+	margin: 1em 0;
+}

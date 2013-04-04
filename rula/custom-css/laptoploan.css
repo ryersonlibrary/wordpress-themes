@@ -1,0 +1,19 @@
+/* Laptop Loan Page */
+
+#laptop_container {
+	margin-left: 0;
+}
+#lap_add_info {
+	display:none;
+}
+#laptop_container h1 {
+	display: none;
+}
+#lap_item_avail {
+	border: 1px solid silver;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+#lap_item_avail a {
+	text-decoration: underline;
+}

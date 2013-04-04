@@ -1,0 +1,142 @@
+/* Research Help
+Last Modified: Feb 18, 2013 by CN */
+
+/* Layout */
+.box {
+	width: 31%;
+	padding: 0 1%;
+	float: left;
+}
+#content .box h2 {
+	text-align: center;
+	margin: 0.5em 0 0;
+}
+#content .box h3 {
+	margin: 1.2em 0 0;
+}
+.box p {
+	margin: 0;
+	line-height: 115%;
+}
+.box ul {
+	padding-left: 10%;
+	margin-top: 0;
+}
+.blue {
+	padding-bottom: 2em;
+}
+.sixty {
+	width: 56.5%;
+}
+.forty {
+	width: 39.5%;
+}
+.ask {
+	padding-bottom: 1em;
+}
+/* For Ask A Librarian widget */
+#askcontainer {
+	max-width: 175px;
+	margin: 1.5em auto 0;
+	padding: 2em 1em 1.6em;
+	opacity: 0.85;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition:all 0.2s ease-in;  
+	-moz-transition:all 0.2s ease-in;  
+	-o-transition:all 0.2s ease-in;  
+	transition:all 0.2s ease-in;  
+}
+
+#lpButDivID-1313887460492 table,
+#lpButDivID-1313887460492 td {
+	max-width: 99.5%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.lpPoweredBy {
+display:none;
+}
+.lpEmtStarRating {
+display:none;
+}
+
+#lpButDivID-1313887460492 {
+	margin: 0 auto;
+	max-width: 150px;
+}
+.ask p {
+	text-align: center;
+	margin-top: -1.4em;
+}
+.ask a:link {
+	text-decoration: none;
+}
+.ask a:hover,
+.ask a:active {
+	text-decoration: underline;
+}
+.yellow {
+	padding-bottom: 0.5em;
+}
+/* Colours */
+.blue {
+	background-color: #1C5793;
+	color: #FFF;
+}
+.blue h2 {
+	color: #E0B12F; /* yellow */
+}
+.blue a:link,
+.blue a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+.blue a:hover,
+.blue a:active {
+	text-decoration: underline;
+}
+#askcontainer:hover,
+#askcontainer:active {
+	background-color: #EEE;
+    opacity:1;
+}
+.yellow {
+	background-color: #E0B12F;
+	margin-bottom: 1em;
+}
+.yellow h2 {
+	color: #1C5793;
+}
+.yellow a:link,
+.yellow a:visited {
+	color: #000;
+	text-decoration: none;
+}
+.yellow a:hover,
+.yellow a:active {
+	text-decoration: underline;
+}
+
+@media (max-width: 47em) { /* approx 750px, force double column */
+	.box {
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 46%;
+	}
+	.yellow {
+		clear: left;
+	}
+	.column {
+		padding: 0 1% !important;
+	}
+}
+@media (max-width: 30em) { /* approx 475px, force single column */
+	.box {
+		width: 95%;
+		min-width: 10px;
+	}
+}

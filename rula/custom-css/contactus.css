@@ -1,0 +1,59 @@
+/* Contact Us page CSS
+Last Modified by: CN on Mar 20, 2013 */
+
+/* To replace table layout, typically img on left and text on right */
+section div {
+  display:inline-block; vertical-align: middle;
+}
+section {
+  display: block;
+}
+.bottomborder {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* Add padding to icons */
+.entry-content img[class*="wp-image-"] {
+	margin-top: 1.625em;
+}
+
+/* For Ask A Librarian widget */
+#lpButDivID-1313887460492 table,
+#lpButDivID-1313887460492 td {
+	max-width: 99.5%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.lpPoweredBy {
+display:none;
+}
+
+.lpEmtStarRating {
+display:none;
+}
+
+#lpButDivID-1313887460492 {
+	margin-bottom: -1.8em;
+} /* Puts Ask a Librarian header close to chat */
+
+#ie7 .entry-content img {
+	width: auto;
+	max-width: none;
+}
+
+/* styling privacy statement bit */
+#privstmtheader {
+	margin-bottom: 0.5em;
+}
+#privstmt {
+  border: 1px solid #143E68;
+  border-radius: 10px;
+  padding: 0.6em 0.6em 0;
+}
+.toggleLink {
+	font-size: 1em;
+	font-weight: normal;
+	margin-left: 0.25em;
+}

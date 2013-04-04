@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	overflow: auto;
+}
+
+#branding {
+	height: 95px;
+}
+
+#branding #asc-logo {
+	float: left;
+}
+
+#nav {
+	line-height: 0;
+}
+
+#main-menu > li  {
+	z-index: 5;
+}
+
+#nav ul.sub-menu {
+	margin-left: -59px;
+	margin-top: 22px;
+}
+
+#main-menu >li.sc > ul.sub-menu {
+	margin-left: -119px;
+}

@@ -1,0 +1,61 @@
+/* Digital Commons Page
+Last Modified: Jan 30, 2013 by CN */
+
+/* RSS News feed */
+.newsbox {
+	padding-left: 20px;
+	padding-right: 20px;
+	height: inherit;
+	background-color: #f5f5f5;
+	border: 1px solid #E5E5E5; 
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+.newsheader {
+	 padding-bottom: 10px;
+	 border-bottom: #E0B12F solid 2px;
+}
+.rss-items {
+	padding-left: 1.5em;
+}
+.rss-item {
+	padding-top: 0.25em;
+}
+
+/* Search Form and Links */
+#sidebar-search {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+#sidebar-search label {
+	color: #003366;
+	font-size: 110%;
+}
+#search {
+	border-width: 1px 1px 1px 5px;
+	border-style: solid;
+	border-color: #145192;
+	margin-top: 0.2em;
+	margin-right: 0.4em;
+	width: 70%;
+}
+
+.linkbox {
+	background-color: #145192;
+	color: #F4C133;
+	font-size: 110%;
+	margin-bottom: 0.8em;
+	padding: 0.5em 1em;
+	width: 80%;
+}
+.linkbox a:link,
+.linkbox a:visited {
+	color: #F4C133;
+	text-decoration: none;
+}
+.linkbox a:hover,
+.linkbox a:active {
+	text-decoration: underline;
+}

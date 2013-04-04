@@ -1,0 +1,28 @@
+/*
+CSS File for IE8
+Last Modified by: CN
+Last Modified: Sep 8, 2012
+*/
+
+/* WordPress overwrites */
+section.feature-image.large img {  
+    width: 100%;  
+}
+
+/* Subsite Title */
+#sitename {
+	width: 750px;
+}
+
+/* Frontpage */
+.page-template-frontpage-php #page {
+	width: 960px;
+}
+.page-template-frontpage-php #sitename {
+	width: auto;
+}
+
+/* Content overwrite - get rid of bottom-border on pages*/
+.page .hentry {
+	border-bottom: none;
+}

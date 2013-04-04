@@ -1,0 +1,16 @@
+/* eBooks page CSS
+Last Modified by: CN on Feb 18, 2013 */
+
+/* To replace table layout, typically img on left and text on right */
+section div {
+  display:inline-block;
+  vertical-align: middle;
+}
+section {
+  display: block;
+}
+.bottomborder {
+  border-bottom: 1px solid #E8E8E8;
+  margin-bottom: 0.5em;
+  clear: both;
+}

@@ -1,0 +1,73 @@
+/*
+CSS File for IE7
+Last Modified by: CN
+Last Modified: July 28, 2012
+*/
+
+/* WordPress overwrites */
+article.intro {
+	margin-left: -7.6%;
+	margin-right: -7.6%;
+	padding-left: -7.6%;
+	padding-right: -7.6%;
+	max-width: 1000px;
+}
+section.featured-post {
+	margin-left: -7.6%;
+	margin-right: -7.6%;
+	max-width: 850px;
+}
+section.recent-posts {
+	margin-right: 7.6%;
+}
+
+/* Global Nav overwrites */
+nav {
+	z-index: 10;
+}
+#top-nav-list {
+	display: block;
+	height: 39px;
+}
+
+#top-nav-list > li {
+	display: list-item;
+	float: left;
+}
+#top-nav-list li.menu {
+	display: list-item;
+	float: left;
+}
+#top-nav-list .menu-item,
+#top-nav-list li.menu
+#top-nav-list > li {
+	display: list-item;
+	float: left;
+}
+
+#top-nav-list .menu-item-search {
+	display: list-item;
+	width: 150px;
+	padding: 6px 0 6px 6px;
+}
+
+#top-nav-list .sub-menu {
+	top: 39px;
+	left: 0;
+	margin: 0;
+}
+
+#top-nav-list .sub-menu .menu-item {
+	float: none;
+	background-color: #E8E8E8;
+}
+
+/* Frontpage */
+.page-template-frontpage-php #page {
+	width: 960px;
+}
+
+/* Content overwrite - get rid of bottom-border on pages*/
+.page .hentry {
+	border-bottom: none;
+}

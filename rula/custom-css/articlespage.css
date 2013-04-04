@@ -1,0 +1,61 @@
+/* Articles CSS
+Last Modified: Feb 19, 2013 by CN */
+
+/* For Summon search */
+.buttons-primary-button-style {
+	color: #ffffff;
+	background-color: #d56a00;
+}
+.summon_search {
+	margin-bottom: 30px;
+}
+.search_string {
+	width:300px;
+}
+#concurrents {
+	border: 2px #999 solid; 
+	width: 25%; 
+	padding-left: 5px;
+}
+
+/* Other */
+#articles_search {
+	width: 600px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#allarticles {
+	width: 500px;
+	max-width: 100%;
+}
+
+#articlesopt {
+	float: left;
+	position: relative;
+	left: 28%;
+	width: 80%;
+	display: block;
+}
+
+#scholarlyopt {
+	margin: 5px 5px 0 0;
+  vertical-align: -5%;
+}
+
+.column ul {
+	list-style-type: none;
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+.column ul li {
+	padding-bottom: 0.5em;
+}
+
+@media (max-width: 42em) {
+	#articlesopt {
+		left: 0;
+		width: 340px;
+		max-width: 100%;
+	}
+}

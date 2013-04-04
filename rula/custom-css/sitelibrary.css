@@ -1,0 +1,268 @@
+/* RyersonU Library Sitewide CSS
+Last Modified by: CN on Mar 25, 2013 */
+
+/*** Content ***/
+/* Global Overrides */
+.entry-content iframe {
+	margin: 0;
+	border: none;
+	overflow: hidden;
+}
+
+/* images without borders */
+img[class*="wp-image-"].noborder, #content .gallery .gallery-icon {
+	border: 0;
+}
+
+/* Form fields styling */
+.req {
+	font-size: 125%;
+	color: red;
+}
+
+.alignfields label,
+.alignfields input {
+	display: inline-block;
+}
+.alignfields label {
+	width: 200px;
+	vertical-align: top;
+}
+.alignfields input[type="text"] {
+	margin: 2px 0;
+}
+.alignfields .column {
+	padding: 0;
+}
+
+/* For Table Styling */
+.entry-content table {
+	max-width: 98%;
+}
+.entry-content table.textright td {
+	text-align: right;
+}
+.entry-content table caption {
+	color: #666;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-bottom: 0.3em;
+}
+
+.entry-content tbody tr:nth-of-type(even) {
+	background-color: #FFFAEF;
+}
+.entry-content th {
+	background-color: #F0F8FF;
+	color: #000000;
+}
+.entry-content th[scope="row"] {
+	border-top: 1px solid #DDD;
+}
+.entry-content .simple tr {
+	background-color: #FFF;
+}
+.entry-content .simple th {
+	font-weight: bold;
+	text-transform: none;
+	background-color: #FFF;
+	border-top: 1px solid #DDD;
+	padding: 0.3em;
+}
+.entry-content .nopadding th {
+	padding: 0;
+}
+.entry-content .simple th,
+.entry-content .simple td {
+	border-left: 1px solid #DDD;
+}
+.entry-content .simple th[scope="col"]:last-of-type,
+.entry-content .simple td:last-of-type {
+	border-right: 1px solid #DDD;
+}
+.entry-content .paleblue th,
+.entry-content .paleblue td {
+	background-color: #F0F8FF;
+}
+
+/* For auto generated 2 column layouts */
+.auto-two-columns {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+/* For 2 Column layouts */
+.column {
+	float: left;
+	padding: 0 1%;
+}
+.full {
+	width: 97.5%;
+}
+.half {
+	width: 47.5%;
+}
+.wide {
+	width: 64%;
+}
+.narrow {
+	width: 31%;
+}
+.clearfix {
+  overflow: auto;
+}
+/* column left border */
+.leftborder {
+	border-left: 1px dotted #CCC;
+}
+.leftpadding {
+	padding: 0 0 0 2%;
+}
+/* For Announcements */
+#announce {
+  background: #FEFBF4;
+  border: 2px solid #D50202;
+  padding: 0.5em;
+}
+
+/* Used in Collection Development Policy */
+.upper-roman {
+	list-style-type: upper-roman;
+}
+
+/* For Database Description pages */
+#concurrents {
+	border: 2px #999 solid;
+	width: 25%;
+	padding-left: 5px;
+}
+
+.entry-content iframe[src^="http://ryerson.scholarsportal.info"] {
+	height: 40px;
+	margin-bottom: -15px;
+}
+
+/*** Sidebar ***/
+/* Subpages Widget Overrides */
+ul.subpages-navi-widget {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+}
+.lt-ie8 ul.subpages-navi-widget {
+   width: 95%;
+}/* box-sizing not supported before IE8 */
+
+ul.subpages-navi,
+.subpages-navi ul {
+  padding-left: 14px;
+}
+
+ul.subpages-navi li + li {
+  border-top: 1px dotted gray;
+}
+.subpages-navi ul.children>li {
+  border-top: 1px dotted gray;
+}
+ul.subpages-navi .hitarea {
+  background-color: #1C5793;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi .hitarea {
+  background-color: #264872;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi-widget a,
+.section-widget .menu a {
+  padding: 0.15em 0 0.15em 4px;
+  text-indent: -0.8em;
+  margin-left: 0.8em; /* text-indent and margin-left should be same absolute value to make hanging indent */
+}
+
+.subpages-navi-current-level > a:first-of-type {
+	color: #B77D00;
+}
+
+/* Custom Menu styling */
+#secondary aside[id^="olt-subpages-navigation-widget"] + aside {
+	margin-top: -1.6em;
+}
+
+.section-widget .menu
+{ 
+	list-style: none outside none;
+	padding-left: 14px;
+}
+.section-widget .menu li {
+  border-top: 1px dotted gray;
+}
+.section-widget .menu a {
+	display: block;
+}
+
+/* New Books */
+#newbooksb {
+	max-width: 100%;
+	max-height: 175px;
+	overflow: hidden;
+}
+#newbooksb table {
+	margin: 0 auto;
+}
+
+/* Blog */
+#secondary #linkcat-189,#secondary #polls-widget-2 {
+	margin-bottom:.4em;
+	padding-bottom:1.2em;
+	border-bottom:1px solid #D9D9D9;
+}
+#secondary hr {
+	background-color:#D9D9D9;
+	color:#D9D9D9;
+}
+#secondary #polls-widget-2 {
+	border-top:1px solid #D9D9D9;
+}
+
+/*** Comments ***/
+#respond #recaptcha-submit-btn-area {
+	float: right;
+}
+.comment-subscription-form {
+	margin: 0;
+}
+
+@media (max-width: 40.5em) { /* approx 650px, force single column */
+	.auto-two-columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+	.column {
+		padding: 0 2% !important;
+	}
+	.half,
+	.wide,
+	.narrow {
+		width: 95%;
+	}
+	.leftborder {
+		border-left: none;
+	}
+}

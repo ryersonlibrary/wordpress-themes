@@ -1,0 +1,144 @@
+/* ASC Homepage CSS
+Last edited by: CN
+Last edited on: Feb 4, 2013
+*/
+
+.page-id-576 img {
+	max-width:100%;
+}
+
+#content {
+	margin-left: 0;
+	margin-right: 0;
+	color: #FFF;
+}
+
+.hentry {
+	margin: 0;
+}
+
+.home-image-wrapper {
+	margin: 2px;
+	position: relative;
+}
+
+.home-center-wrapper {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.home-text-wrapper {
+	bottom: 0;
+	padding: 7px 3%;
+	position: absolute;
+	text-align: right;
+	display: table-cell;
+	vertical-align: middle;
+	opacity: 0.85;
+	width: 94%;
+}
+
+a .home-text-wrapper, a:hover .home-text-wrapper, a:visited .home-text-wrapper {
+	color: white;
+	font-size: 1.2em;
+}
+
+#home-link-new, #home-link-new img {
+	width: 392px;
+	height: 382px;
+	float: left;
+	margin-left: 0;
+}
+
+#home-link-new .home-text-wrapper {
+	background-color: #E66B76;
+}
+
+#home-link-arch, #home-link-arch img {
+	 width: 186px;
+	 height: 190px;
+}
+#home-link-arch .home-text-wrapper {
+	background-color: #DFA526;
+}
+
+#home-link-sc, #home-link-sc img {
+	 width: 186px;
+	 height: 190px;
+}
+#home-link-sc .home-text-wrapper {
+	background-color: #0795A1;
+}
+
+#home-link-search, #home-link-search img {
+	width: 249px;
+	height: 259px;
+	float: left;
+	margin-right: 0;
+}
+#home-link-search .home-text-wrapper {
+	background-color: #DC9C61;
+}
+
+#home-link-hours, #home-link-hours img {
+	width: 150px;
+ 	height: 119px;
+	float: left;
+}
+#home-link-hours .home-text-wrapper {
+	background-color: #669B25;
+}
+
+#ie7 .home-text-wrapper {
+	bottom: 32px;
+	position: relative;
+}
+#ie7 #home-link-new .home-text-wrapper {
+	width: 368px;
+}
+#ie7 #home-link-arch .home-text-wrapper {
+	width: 174px;
+	bottom: 50px;
+}
+#ie7 #home-link-sc .home-text-wrapper {
+	width: 174px;
+	bottom: 50px;
+}
+#ie7 #home-link-search .home-text-wrapper {
+	width: 235px;
+}
+#ie7 #home-link-hours .home-text-wrapper {
+	width: 140px;
+}
+
+@media (max-width: 38.5em) { /* ~600px */
+	.home-center-wrapper {
+		float: right;
+	}
+	#home-link-new, #home-link-new img {
+		 width: 186px;
+		 height: 190px;
+	}
+	#home-link-search, #home-link-search img {
+		 width: 186px;
+		 height: 190px;
+	}
+	#content {
+		margin: 0;
+	}
+}
+@media (max-width: 25em) { /* ~400px */
+	.entry-content img {
+		display: none;
+	}
+	.home-center-wrapper {
+		float: none;
+	}
+	#home-link-new, #home-link-arch, #home-link-sc, #home-link-hours, #home-link-search {
+		 width: 95%;
+		 height: 22px;
+		 margin: 0 auto;
+		 float: none;
+	}
+}

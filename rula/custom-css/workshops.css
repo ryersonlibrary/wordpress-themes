@@ -1,0 +1,54 @@
+/* Workshops Page CSS
+Last Modified by: CN on Mar 26, 2013 */
+
+/* Overrides */
+#content .center {
+	text-align: center;
+}
+
+/* Everyday icons & links */
+#everyday ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+#everyday li {
+    line-height: 100%;
+}
+#everyday li a,
+#everyday li a:link, 
+#everyday li a:visited {
+	min-width: 75px;
+	max-width: 100%;
+	display: inline-block;
+	padding: 0.5em;
+	text-decoration:none;
+	opacity: 0.8;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition:all 0.2s ease-in;  
+	-moz-transition:all 0.2s ease-in;  
+	-o-transition:all 0.2s ease-in;  
+	transition:all 0.2s ease-in;  
+}
+#everyday li a:active, 
+#everyday li a:hover {
+	background-color:#eeeeee;
+	color: #000000;
+	text-decoration: none;
+	opacity: 1;
+}
+#everyday img {
+	border: 0;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 40.5em) { /* approx 650px, when force single column */
+	#everyday li {
+	  display: inline-block;
+	}
+}

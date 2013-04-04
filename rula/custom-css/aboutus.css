@@ -1,0 +1,56 @@
+/* About Us CSS
+Last Modified by: CN on Apr 2, 2013 */
+
+/* Overrides */
+#content h2 {
+	margin: 0.5em 0;
+}
+#content ul {
+	margin: 0;
+	padding-left: 1.5em;
+	list-style: none;
+}
+#content li {
+	margin-left: 0.8em;
+	text-indent: -0.8em;
+}
+#content a {
+	text-decoration: none;
+}
+#content a:hover {
+	text-decoration: underline;
+}
+
+/* Message of CL */
+#content #clmsghead {
+	margin-top: -0.2em;
+}
+
+/* header size list of links */
+#content .biglinks {
+	font-size: 1.3em;
+	padding: 0;
+}
+#content .biglinks li {
+	margin-top: 0.4em;
+	padding: 0.25em 0;
+}
+
+/* Connect with Us */
+#content #connect h2 {
+	display: inline-block;
+}
+#content #connect ul {
+	display: inline-block;
+}
+#content #connect li {
+	display: inline-block;
+	margin: 0;
+	padding-right: 0.3em;
+	text-indent: 0;
+}
+#content #connect img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}

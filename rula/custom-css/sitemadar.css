@@ -1,0 +1,102 @@
+/* Maps & Data at RULA (MADAR) Sitewide CSS
+Last Modified by: CN on March 5, 2013 */
+
+/* Global Override */
+hr {
+  border: 0;
+  color: #E8E8E8;
+  background-color: #E8E8E8;
+  height: 1px;
+}
+
+/* For auto generalted 2 column layouts */
+.auto-two-columns {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+/* For 2 Column layouts */
+.column {
+	float: left;
+	padding: 0 1%;
+}
+.half {
+	width: 47.5%;
+}
+.wide {
+	width: 62.5%;
+}
+.narrow {
+	width: 32.5%;
+}
+
+/* Sidebar Subpages Widget Overrides */
+ul.subpages-navi-widget {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+}
+.lt-ie8 ul.subpages-navi-widget {
+   width: 95%;
+}/* box-sizing not supported before IE8 */
+
+ul.subpages-navi,
+.subpages-navi ul {
+  padding-left: 14px;
+}
+
+ul.subpages-navi li + li {
+  border-top: 1px dotted gray;
+}
+.subpages-navi ul.children>li {
+  border-top: 1px dotted gray;
+}
+ul.subpages-navi .hitarea {
+  background-color: #1C5793;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi .hitarea {
+  background-color: #264872;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi-widget a,
+.section-widget .menu a {
+  padding: 0.15em 0 0.15em 4px;
+  text-indent: -0.8em;
+  margin-left: 0.8em; /* text-indent and margin-left should be same absolute value to make hanging indent */
+}
+
+.subpages-navi-current-level > a:first-of-type {
+	color: #B77D00;
+}
+
+@media (max-width: 40.5em) { /* approx 650px, force single column */
+	.auto-two-columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+	.column {
+		padding: 0 2%;
+	}
+	.half,
+	.wide,
+	.narrow {
+		width: 95%;
+	}
+}

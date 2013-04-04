@@ -1,0 +1,18 @@
+/* For Nexus Page
+Last Modified by: CN on Feb 18, 2013 */
+
+.issue {
+	display: inline-table;
+	float: left;
+	height: 170px;
+	width: 150px;
+	margin-left:30px;
+	margin-bottom: 5px;
+	font-size: 0.8em;
+	border-collapse: collapse;
+	text-align: center;
+}
+.issue img {
+	vertical-align: text-bottom;
+  	margin-bottom: 5px;
+}

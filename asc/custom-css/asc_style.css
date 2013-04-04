@@ -1,0 +1,44 @@
+/* RULA-ASC Site-Specific CSS
+Last Modified: Sep 4, 2012
+Last Modified by: CN
+*/
+/*** General ***/
+.clear {
+	clear: both;
+}
+
+/* ===== Main navigation menu ===== */
+
+/* Set the background color of the Archive main submenu. */
+#nav #main-menu > li.arch ul {
+	background-color: #DFA526;
+}
+
+/* Set the background color of the Special Collections main submenu. */
+#nav #main-menu > li.sc ul {
+	background-color: #0795A1;
+}
+
+/* ===== Sidebar ===== */
+
+/* Color the first element in the Archive Sidebar menu. */
+#primary #submenu #menu-arch li:FIRST-CHILD a {
+	color: #dfa526;
+}
+
+/* Color the first element in the Special Collections Sidebar menu. */
+#primary #submenu #menu-sc li:FIRST-CHILD a {
+	color: #0795a1;
+}
+
+/* Use the hover color to override the colouring of the first element. */
+#primary #submenu #menu-sc li:FIRST-CHILD a:hover,
+#primary #submenu #menu-arch li:FIRST-CHILD a:hover {
+	color: #ce9b6e;
+}
+
+/*** Comment forms - override recaptcha styles ***/
+#recaptcha-submit-btn-area #submit {
+	width: auto;
+	margin: 10px 6px 5px;
+}

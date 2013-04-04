@@ -1,0 +1,52 @@
+/* Sexual Diversity (RULA) Sitewide CSS
+Last Modified by: CN
+Last Modified: July 22, 2012 */
+
+/* To replace table layout, typically img on left and text on right */
+section div {
+  display:inline-block; vertical-align: middle;
+}
+section {
+  display: block;
+}
+.bottomborder {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* For auto generalted 2 column layouts */
+.auto-two-columns {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+/* For 2 Column layouts */
+.column {
+	float: left;
+	padding: 0 1%;
+}
+.half {
+	width: 47.5%;
+}
+.wide {
+	width: 62.5%;
+}
+.narrow {
+	width: 32.5%;
+}
+
+@media (max-width: 40.5em) { /* approx 650px, force single column */
+	.auto-two-columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+	.column {
+		padding: 0 2%;
+	}
+	.half,
+	.wide,
+	.narrow {
+		width: 95%;
+	}
+}

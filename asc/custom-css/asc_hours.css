@@ -1,0 +1,36 @@
+/* Last Modified by: CN
+Last Modified: Aug 13, 2012 */
+
+/* For 2 Column layouts */
+.column {
+	float: left;
+	padding: 0 1%;
+}
+.half {
+	width: 47.5%;
+}
+.wide {
+	width: 67.5%;
+}
+.narrow {
+	width: 30%;
+}
+
+@media (max-width: 51.5em) {
+	.narrow {
+		width: 47.5%;
+	}
+}
+@media (max-width: 30em) {
+	.column {
+		padding: 0 2%;
+	}
+	.half,
+	.wide,
+	.narrow {
+		width: 95%;
+	}
+	#attachment_916 {
+		float: left;
+	}
+}
