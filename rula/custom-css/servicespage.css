@@ -1,0 +1,94 @@
+/* Services Page CSS
+Last Modified by: CN on Apr 15, 2013 */
+
+/* Overrides */
+#content h2 {
+	margin: 1em 0 0.5em 1em;
+	text-indent: -1em;
+}
+#content ul {
+	margin: 0;
+	padding-left: 1.5em;
+	list-style: none;
+}
+#content li {
+	margin-left: 0.8em;
+	text-indent: -0.8em;
+}
+#content a {
+	text-decoration: none;
+}
+#content a:hover {
+	text-decoration: underline;
+}
+
+/* Column Width */
+.wider {
+	width: 40%;
+}
+.narrower {
+	width: 32%;
+}
+
+/* Services for icons & links */
+#servicesfor {
+	width: 17.5%;
+	text-align: center;
+}
+#servicesfor ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+#servicesfor li {
+    line-height: 100%;
+	margin: 0;
+	text-indent: 0;
+}
+#servicesfor li a,
+#servicesfor li a:link, 
+#servicesfor li a:visited {
+	min-width: 75px;
+	max-width: 100%;
+	display: inline-block;
+	padding: 0.5em;
+	text-decoration:none;
+	opacity: 0.8;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition:all 0.2s ease-in;  
+	-moz-transition:all 0.2s ease-in;  
+	-o-transition:all 0.2s ease-in;  
+	transition:all 0.2s ease-in;  
+}
+#servicesfor li a:active, 
+#servicesfor li a:hover {
+	background-color:#eeeeee;
+	color: #000000;
+	text-decoration: none;
+	opacity: 1;
+}
+#servicesfor img {
+	border: 0;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 40.5em) { /* approx 650px, when force single column */
+	.wider,
+	.narrower,
+	#servicesfor {
+		width: 95%;
+	}
+	#servicesfor {
+		text-align: left;
+	}
+	#servicesfor li {
+	  display: inline-block;
+	  max-width: 50%;
+	 text-align: center;
+	}
+}
