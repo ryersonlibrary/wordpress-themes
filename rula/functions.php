@@ -499,3 +499,28 @@ function twenty_eleven_infinite_scroll_init() {
 	) );
 }
 add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
+
+/**
+ * Add exception of id attribute in headers in order to add anchor links
+ * @since RULA 1.2
+ */
+ function allow_ids_content() {
+    global $allowedposttags;
+ 
+	$allowedposttags["h2"] = array(
+	 "id" => array()
+	);
+	$allowedposttags["h3"] = array(
+	 "id" => array()
+	);
+	$allowedposttags["h4"] = array(
+	 "id" => array()
+	);
+	$allowedposttags["h5"] = array(
+	 "id" => array()
+	);
+	$allowedposttags["h6"] = array(
+	 "id" => array()
+	);
+}
+add_filter('pre_kses', 'allow_ids_content');
