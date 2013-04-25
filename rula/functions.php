@@ -504,7 +504,8 @@ add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
  * Add exception of id attribute in headers in order to add anchor links
  * @since RULA 1.2
  */
- function allow_ids_content() {
+add_action( 'init', 'allow_ids_content' );
+function allow_ids_content() {
     global $allowedposttags;
  
 	$allowedposttags["h2"] = array(
@@ -523,4 +524,3 @@ add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
 	 "id" => array()
 	);
 }
-add_filter('pre_kses', 'allow_ids_content');
