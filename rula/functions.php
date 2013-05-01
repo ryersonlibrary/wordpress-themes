@@ -498,6 +498,7 @@ function twenty_eleven_infinite_scroll_init() {
 		'footer'         => 'page',
 	) );
 }
+<<<<<<< HEAD
 add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
 
 /**
@@ -524,3 +525,6 @@ function allow_ids_content() {
 	 "id" => array()
 	);
 }
+=======
+add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
+>>>>>>> parent of 6f021c5... added kses exception
