@@ -75,7 +75,7 @@ setcookie("mobile","m", time()+3600, "/","library.ryerson.ca");
 	<header id="branding" role="banner">
         <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to content">Skip to content</a></div>
         <a href="/m"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/mobile-logo.png" alt="Ryerson Library and Archives logo" /></a>
-        <?php if(is_front_page()) : ?><a href="http://m.ryerson.ca/" title="Ryerson Mobile"><img id="mlogo" src="<?php bloginfo('template_directory'); ?>/images/r-logo.png" alt=""></a><?php endif; ?>
+        <?php if(is_front_page()) : ?><a href="http://m.ryerson.ca/"><img id="mlogo" alt="Logo and link to Ryerson Mobile" src="<?php bloginfo('template_directory'); ?>/images/r-logo.png"></a><?php endif; ?>
 	</header><!-- #branding -->
 
 	<div id="main">
