@@ -1,20 +1,56 @@
 /* Contact Us page CSS
-Last Modified by: CN on Mar 20, 2013 */
+Last Modified by: CN on Jun 12, 2013 */
 
-/* To replace table layout, typically img on left and text on right */
-section div {
-  display:inline-block; vertical-align: middle;
+/* FAQ */
+#la_qform {
+	display:inline !important;
+	margin:0 !important;
+	padding:0 !important;
 }
-section {
-  display: block;
+#la_widget {
+	margin: 0 auto !important;
+	width: 85% !important;
+	border: 0 !important;
 }
-.bottomborder {
-  border-bottom: 1px solid #E8E8E8;
+#la_qentry {
+	margin-left: 4em !important;
+	margin-right: 1em !important;
+	width: 500px !important;
+}
+#la_qformbutton {
+	font-size: 0.8em !important;
+	width: 100px !important;
+	margin-top: 0.5em !important;
 }
 
-/* Add padding to icons */
-.entry-content img[class*="wp-image-"] {
-	margin-top: 1.625em;
+/* column structure */
+#locbox {
+	width: 30%;
+}
+
+#contactbox {
+	width: 36%;
+	padding-left: 2%;
+}
+#contactbox th {
+	padding: 0;
+}
+/* icons */
+#content .headericon {
+	border: 0;
+	padding: 0 5px 0 0;
+	vertical-align: text-bottom;
+}
+
+/* Research Help box */
+#helpbox {
+	border: 2.5px solid #E5A10B;
+	margin-top: 1em;
+	width: 25%;
+	padding-left: 1.7%;
+}
+#content #helpbox h2 {
+	margin-top: 0.5em;
 }
 
 /* For Ask A Librarian widget */
@@ -34,9 +70,13 @@ display:none;
 display:none;
 }
 
+/* Puts Ask a Librarian header close to chat */
 #lpButDivID-1313887460492 {
 	margin-bottom: -1.8em;
-} /* Puts Ask a Librarian header close to chat */
+}
+.asklibheader {
+	margin-top: -1.8em !important;
+}
 
 #ie7 .entry-content img {
 	width: auto;
@@ -47,13 +87,46 @@ display:none;
 #privstmtheader {
 	margin-bottom: 0.5em;
 }
-#privstmt {
-  border: 1px solid #143E68;
-  border-radius: 10px;
-  padding: 0.6em 0.6em 0;
-}
 .toggleLink {
 	font-size: 1em;
 	font-weight: normal;
 	margin-left: 0.25em;
+}
+@media (max-width: 57.5em) { /* approx 920px, change widget sizing */
+	#la_widget {
+		width: 100% !important;
+		max-width: 700px !important;
+	}
+	#la_qentry {
+		max-width: 500px !important;
+		width: 75% !important;
+		margin-left: 2.5em !important;
+	}
+}
+@media (max-width: 50em) { /* approx 800px, force two column */
+	#la_qentry {
+		width: 75% !important;
+		margin-left: 2% !important;
+	}
+	#locbox,
+	#contactbox,
+	#helpbox {
+		width: 45%;
+	}
+	#helpbox {
+		clear: left;
+	}
+}
+@media (max-width: 40.5em) { /* approx 650px, force single column */
+	#locbox,
+	#contactbox,
+	#helpbox {
+		width: auto;
+		max-width: 95%;
+		clear: both;
+	}
+	#la_qentry {
+		width: 95% !important;
+		margin-left: 0 !important;
+	}
 }
