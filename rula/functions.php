@@ -499,3 +499,16 @@ function twenty_eleven_infinite_scroll_init() {
 	) );
 }
 add_action( 'init', 'twenty_eleven_infinite_scroll_init' );
+
+/**
+ * Add data-ga-event to the list of allowed attributes in the 'a' tag
+ * @since RULA 1.2
+ */
+function allow_dataevent_content() {
+    global $allowedposttags, $allowedtags;
+	$newattribute = "data-ga-event";
+
+    $allowedposttags["a"][$newattribute] = true;
+    $allowedtags["a"][$newattribute] = true;
+}
+add_action( 'init', 'allow_dataevent_content' );

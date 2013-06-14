@@ -1,5 +1,5 @@
 /* Contact Us page CSS
-Last Modified by: CN on Jun 12, 2013 */
+Last Modified by: CN on Jun 14, 2013 */
 
 /* FAQ */
 #la_qform {
@@ -72,10 +72,11 @@ display:none;
 
 /* Puts Ask a Librarian header close to chat */
 #lpButDivID-1313887460492 {
-	margin-bottom: -1.8em;
+	max-height: 150px;
+	overflow: hidden;
 }
 .asklibheader {
-	margin-top: -1.8em !important;
+	margin-top: -1em !important;
 }
 
 #ie7 .entry-content img {
