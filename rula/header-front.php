@@ -104,6 +104,7 @@ elseif ($detect->isMobile())
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
             <div id="sitename">
+                <div class="skip-link"><a class="assistive-text" href="http://library.ryerson.ca/m/"><?php _e( 'Go to mobile version', 'twentyeleven' ); ?></a></div>
                 <div class="skip-link"><a class="assistive-text" href="#access" title="<?php esc_attr_e( 'Skip to main menu', 'twentyeleven' ); ?>"><?php _e( 'Skip to main menu', 'twentyeleven' ); ?></a></div>
                 <div class="skip-link">
 					<script type="text/javascript">
