@@ -1,0 +1,127 @@
+/* RyersonU Copyright Sitewide CSS
+Last Modified by: CN on Jun 18, 2013 */
+
+/*** Content ***/
+/* images without borders */
+img[class*="wp-image-"].noborder, #content .gallery .gallery-icon {
+	border: 0;
+}
+
+/* For auto generated 2 column layouts */
+.auto-two-columns {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+/* For 2 Column layouts */
+.column {
+	float: left;
+	padding: 0 1%;
+}
+.full {
+	width: 97.5%;
+}
+.half {
+	width: 47.5%;
+}
+.wide {
+	width: 64%;
+}
+.narrow {
+	width: 31%;
+}
+.clearfix {
+  overflow: auto;
+}
+
+/*** Sidebar ***/
+/* Subpages Widget Overrides */
+ul.subpages-navi-widget {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+}
+.lt-ie8 ul.subpages-navi-widget {
+   width: 95%;
+}/* box-sizing not supported before IE8 */
+
+ul.subpages-navi,
+.subpages-navi ul {
+  padding-left: 14px;
+}
+
+ul.subpages-navi li + li {
+  border-top: 1px dotted gray;
+}
+.subpages-navi ul.children>li {
+  border-top: 1px dotted gray;
+}
+ul.subpages-navi .hitarea {
+  background-color: #1C5793;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi .hitarea {
+  background-color: #264872;
+  background-image: url("/wp-content/uploads/subpages-sprite.gif");
+}
+ul.subpages-navi li.expandable > .hitarea {
+  background-position: 0 0;
+}
+  
+ul.subpages-navi li.collapsible > .hitarea {
+  background-position: -19px 0;
+}
+ul.subpages-navi-widget a,
+.section-widget .menu a {
+  padding: 0.15em 0 0.15em 4px;
+  text-indent: -0.8em;
+  margin-left: 0.8em; /* text-indent and margin-left should be same absolute value to make hanging indent */
+}
+
+.subpages-navi-current-level > a:first-of-type {
+	color: #B77D00;
+}
+
+/* Custom Menu styling */
+#secondary aside[id^="olt-subpages-navigation-widget"] + aside {
+	margin-top: -1.6em;
+}
+
+.section-widget .menu
+{ 
+	list-style: none outside none;
+	padding-left: 14px;
+}
+.section-widget .menu li {
+  border-top: 1px dotted gray;
+}
+.section-widget .menu a {
+	display: block;
+}
+
+@media (max-width: 40.5em) { /* approx 650px, force single column */
+	.auto-two-columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+	}
+	.column {
+		padding: 0 2% !important;
+	}
+	.half,
+	.wide,
+	.narrow {
+		width: 95%;
+	}
+	.leftborder {
+		border-left: none;
+	}
+}
