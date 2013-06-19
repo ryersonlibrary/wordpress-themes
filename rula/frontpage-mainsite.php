@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Frontpage Template
+ * Template Name: Main Site Frontpage Template
  * Description: Custom front page template that has no title, no comments, no wpautop.
  *
  * @package WordPress
@@ -8,7 +8,7 @@
  * @since RULA 0.1
  */
 
-get_header(); ?>
+get_header('libfront'); ?>
 
 		<div id="primary">
 			<div id="content" role="main">

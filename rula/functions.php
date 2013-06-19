@@ -432,11 +432,11 @@ add_shortcode( 'nivoslider', 'nivoslider_func' );
 
 
 /**
- * Add code to load JS for frontpage template
+ * Add code to load JS for Main Site frontpage template
  * @since RULA 0.6
  */
 function frontpage_js(){
-	if(is_page_template('frontpage.php')){
+	if(is_page_template('frontpage-mainsite.php')){
 		//Book banner not working in JQuery 1.7.1+. Load older version
 		wp_deregister_script( 'jquery' );
 		wp_register_script('jquery', get_bloginfo('template_directory').'/js/jquery.min.js');

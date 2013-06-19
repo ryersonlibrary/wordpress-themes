@@ -2,18 +2,18 @@
 Theme Name: Ryerson University Library - RULA
 Author: Ryerson LITS
 Description: WordPress theme created primarily for the Ryerson University Library & Archives (RULA) website, but also for the use of other RULA sites. Frontpage template use ONLY for main website.
-Version: 1.2
+Version: 1.3
 Tags: dark, light, white, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, custom-menu, microformats, post-formats, sticky-post, theme-options
 
 Version
 Last Released by: CN
-Last Release: March 20, 2013
+Last Release: Jun 19, 2013
 
 Since this is based on the Twenty Eleven theme, some of the code may not actually do anything (this applies to all files).
 
 CSS File
 Last Modified by: CN
-Last Modified: April 12, 2013
+Last Modified: Jun 19, 2013
 */
 
 @import "normalize.css";
@@ -75,26 +75,6 @@ body {
 	margin-right: 1.5%;
 }
 
-/* Frontpage */
-.page-template-frontpage-php #page {
-	min-width: 960px;
-}
-.page-template-frontpage-php #primary {
-	border: 0;
-	margin: 0;
-	width: 73%;
-}
-.page-template-frontpage-php #content {
-	margin: 0;
-	padding-left: 1.6em;
-	width: 95%;
-}
-.page-template-frontpage-php #secondary {
-	float: left;
-	margin-right: 0;
-	width: 26%;
-}
-
 /* Alignment */
 .alignleft {
 	display: inline;
@@ -111,6 +91,26 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Frontpage */
+.page-template-frontpage-mainsite-php #page {
+	min-width: 960px;
+}
+.page-template-frontpage-mainsite-php #primary {
+	border: 0;
+	margin: 0;
+	float: left;
+}
+.page-template-frontpage-mainsite-php #content {
+	margin: 0;
+	padding-left: 1.6em;
+	width: 95%;
+}
+.page-template-frontpage-mainsite-php #secondary {
+	float: left;
+	margin: 0;
+	width: 26%;
 }
 
 /* Right Content */
@@ -386,7 +386,7 @@ select:focus {
 	vertical-align: top;
 }
 
-.page-template-frontpage-php #sitename {
+.page-template-frontpage-mainsite-php #sitename {
 	padding-right: 88px;
 }
 
@@ -1016,7 +1016,7 @@ dl.gallery-item {
 }
 
 /* Frontpage */
-.page-template-frontpage-php .entry-content {
+.page-template-frontpage-mainsite-php .entry-content {
 	width: 100%;
 	padding: 0;
 }
@@ -1961,10 +1961,10 @@ p.comment-form-comment {
 		width: 99.9%;
 		float: left;
 	}
-	.page-template-frontpage-php #main #primary {
+	.page-template-frontpage-mainsite-php #main #primary {
 		width: 670px;
 	}
-	.page-template-frontpage-php #main #content {
+	.page-template-frontpage-mainsite-php #main #content {
 		margin: 0;
 		padding-left: 1.6em;
 		width: 95%;
@@ -1978,7 +1978,7 @@ p.comment-form-comment {
 		margin: 0 7.6%;
 		width: auto;
 	}
-	.page-template-frontpage-php #main #secondary {
+	.page-template-frontpage-mainsite-php #main #secondary {
 		margin: 2% 0 0;
 		width: 230px;
 	}
@@ -1986,7 +1986,7 @@ p.comment-form-comment {
 /*	#top-nav-list {
 		display: block;
 	}
-	.page-template-frontpage-php #top-nav-list {
+	.page-template-frontpage-mainsite-php #top-nav-list {
 		display: table;
 	}*/
 	#top-nav-list .menu-item,
@@ -1995,8 +1995,8 @@ p.comment-form-comment {
 		float: left;
 		border-bottom: 1px solid #D7D7D7;
 	}
-	.page-template-frontpage-php #top-nav-list .menu-item,
-	.page-template-frontpage-php #top-nav-list .menu li {
+	.page-template-frontpage-mainsite-php #top-nav-list .menu-item,
+	.page-template-frontpage-mainsite-php #top-nav-list .menu li {
 		display: table-cell;
 		float: left;
 	}

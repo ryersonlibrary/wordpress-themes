@@ -433,7 +433,7 @@ function twentyeleven_layout_classes( $existing_classes ) {
 
 	if ( 'content-sidebar' == $current_layout )
 		$classes[] = 'right-sidebar';
-	elseif ( 'sidebar-content' == $current_layout && !is_page_template('frontpage.php' ))
+	elseif ( 'sidebar-content' == $current_layout && !is_page_template('frontpage.php' ) && !is_page_template('frontpage-mainsite.php' ))
 		$classes[] = 'left-sidebar';
 	else
 		$classes[] = $current_layout;

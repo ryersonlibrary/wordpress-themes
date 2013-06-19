@@ -1,7 +1,7 @@
 /*
 CSS File for IE7
 Last Modified by: CN
-Last Modified: July 28, 2012
+Last Modified: Jun 19, 2013
 */
 
 /* WordPress overwrites */
@@ -63,7 +63,7 @@ nav {
 }
 
 /* Frontpage */
-.page-template-frontpage-php #page {
+.page-template-frontpage-mainsite-php #page {
 	width: 960px;
 }
 

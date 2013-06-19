@@ -1,7 +1,7 @@
 /*
 CSS File for IE8
 Last Modified by: CN
-Last Modified: Sep 8, 2012
+Last Modified: Jun 19, 2013
 */
 
 /* WordPress overwrites */
@@ -15,10 +15,10 @@ section.feature-image.large img {
 }
 
 /* Frontpage */
-.page-template-frontpage-php #page {
+.page-template-frontpage-mainsite-php #page {
 	width: 960px;
 }
-.page-template-frontpage-php #sitename {
+.page-template-frontpage-mainsite-php #sitename {
 	width: auto;
 }
 
