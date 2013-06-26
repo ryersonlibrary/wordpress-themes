@@ -1,0 +1,26 @@
+/* Library Cards Page CSS
+Last Modified by: CN on Jun 26, 2013 */
+
+/* icons */
+.entry-content img {
+	margin-bottom: 0;
+}
+.entry-content a img,
+.entry-content a:link img, 
+.entry-content a:visited img {
+	opacity: 0.8;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition:all 0.2s ease-in;  
+	-moz-transition:all 0.2s ease-in;  
+	-o-transition:all 0.2s ease-in;  
+	transition:all 0.2s ease-in;  
+}
+.entry-content a:active img, 
+.entry-content a:hover img {
+	background-color:#eeeeee;
+	color: #000000;
+	opacity: 1;
+}
