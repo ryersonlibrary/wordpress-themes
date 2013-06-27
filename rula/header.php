@@ -106,7 +106,9 @@
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
                 <h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
                 <div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyeleven' ); ?>"><?php _e( 'Skip to content', 'twentyeleven' ); ?></a></div>
-                <div class="skip-link secondary"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to page navigation', 'twentyeleven' ); ?>"><?php _e( 'Skip to page navigation', 'twentyeleven' ); ?></a></div>
+                <?php if(!is_page_template('nosidebar.php')): ?>
+	                <div class="skip-link secondary"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to page navigation', 'twentyeleven' ); ?>"><?php _e( 'Skip to page navigation', 'twentyeleven' ); ?></a></div>
+         	   <?php endif; ?>
 				<div id="top-nav">
 					<ul id="top-nav-list" class="grey-gradient">
 					<?php if(isset($hfoptions['parentpgchkbox'])) {
